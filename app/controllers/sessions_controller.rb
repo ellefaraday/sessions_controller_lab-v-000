@@ -10,4 +10,8 @@ class SessionsController < ApplicationController
       redirect_to "/login"
     end
   end
+
+  def destroy
+    session[:name].destroy
+  end
 end
